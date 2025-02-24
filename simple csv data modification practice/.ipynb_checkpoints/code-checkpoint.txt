@@ -1,0 +1,12 @@
+import pandas as pd
+d=pd.read_csv("data.csv")
+print(d)
+d["salary"]=d["salary"] * 1.10
+print(d)
+d.to_csv("updatedsalary.csv", index = False)
+
+
+to check updated csv
+import pandas as pd
+d=pd.read_csv("updatedsalary.csv")
+print(d)
